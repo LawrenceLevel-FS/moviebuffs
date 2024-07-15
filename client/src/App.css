@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Home page styles */
+
+.home {
+  background-image: url("./images/greatest-movies-of-all-time.avif");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  color: white;
+  backdrop-filter: brightness(20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home,
+h1 h3 p button {
+  z-index: 100;
+  position: relative;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.home,
+h1,
+h3,
+p {
+  padding-bottom: 1rem;
+}
+
+.home button {
+  padding: 1rem;
+  font-size: larger;
+  font-weight: 800;
+  background-color: rgb(124, 178, 253);
+  border-radius: 1rem;
+  border: none;
+}
+
+.home button:hover {
+  cursor: pointer;
+}
+
+.home-bg {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  z-index: 1;
+}
+
+.home-content {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: fit-content;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  z-index: 90;
+}
+
+/* NavBar */
+nav {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5rem;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+}
+nav li {
+  margin-right: 2rem;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: wheat;
+}
