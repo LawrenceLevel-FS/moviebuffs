@@ -86,3 +86,45 @@ nav a {
   text-decoration: none;
   color: wheat;
 }
+
+/* movie cards */
+
+#movie-id {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 4rem;
+  justify-content: center;
+}
+
+#movie-id li {
+  border: 1px solid black;
+  width: 10rem;
+  list-style: none;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+#movie-id button:hover {
+  cursor: pointer;
+}
+/* form area */
+
+#form {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#form-content {
+  background-color: black;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+#form-content label {
+  margin-bottom: 1rem;
+}
