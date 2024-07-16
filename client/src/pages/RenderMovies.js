@@ -20,6 +20,7 @@ const RenderMovies = () => {
       ? "http://localhost:3001"
       : process.env.REACT_APP_BASE_URL;
 
+  console.log(`${API_BASE}/apiv1/movies`);
   //get all movies
   const getMovies = async () => {
     setLoading(true);
@@ -28,14 +29,11 @@ const RenderMovies = () => {
         .then((res) => res.json())
         .then((data) => {
           setMovies(data.movies);
-          console.log(movies, "in fetch");
         });
     } catch (error) {
       setError(error.message || "Unexpected Error");
-      console.log(movies, "in catch");
     } finally {
       setLoading(false);
-      console.log(movies, "in Finally!");
     }
   };
 
