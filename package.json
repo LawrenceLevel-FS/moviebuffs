@@ -4,6 +4,7 @@
   "engines": {
     "node": "v18.19.1"
   },
+  "main": "index.js",
   "scripts": {
     "install-client": "npm install --prefix client",
     "install-server": "npm install --prefix server",
