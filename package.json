@@ -13,7 +13,7 @@
     "start": "npm start --prefix server",
     "dev:react": "concurrently --raw \"npm run server\" \"npm run react\"",
     "react": "cd client && npm run start",
-    "server": "cd server; npm run dev"
+    "server": "cd server; npm run start"
   },
   "dependencies": {
     "concurrently": "^8.2.2"
