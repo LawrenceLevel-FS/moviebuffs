@@ -21,13 +21,13 @@ connectDB();
 const port = process.env.PORT || 3001;
 
 //routes
-app.use("/apiv1/movies", movieRoutes);
+router.use("/apiv1/movies", movieRoutes);
 
 // building react app * http://localhost:3001
 
-app.use(express.static(path.join(__dirname, "../../client/build")));
+router.use(express.static(path.join(__dirname, "../../client/build")));
 
-app.get("/*", (req, res) => {
+router.get("/*", (req, res) => {
   res.sendFile(path.join(__dirname, "../client/build", "index.html"));
 });
 
