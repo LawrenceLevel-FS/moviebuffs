@@ -1,6 +1,4 @@
-const { app, port, router } = require("./app/index");
-
-app.use("/", router);
+const { app, port } = require("./app/index");
 
 app.listen(port, () => {
   console.log(`listening on port ${port}`);
