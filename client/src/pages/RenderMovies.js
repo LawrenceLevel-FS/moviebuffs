@@ -10,15 +10,9 @@ const RenderMovies = () => {
     releaseYear: "",
   });
 
-  let ignore = false;
+  // let ignore = false;
   useEffect(() => {
-    if (!ignore) {
-      getMovies();
-    }
-
-    return () => {
-      ignore = true;
-    };
+    getMovies();
   }, []);
 
   const API_BASE =
