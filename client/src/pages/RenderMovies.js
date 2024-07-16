@@ -26,11 +26,16 @@ const RenderMovies = () => {
     try {
       await fetch(`${API_BASE}/apiv1/movies`)
         .then((res) => res.json())
-        .then((data) => setMovies(data.movies));
+        .then((data) => {
+          setMovies(data.movies);
+          console.log(movies, "in fetch");
+        });
     } catch (error) {
       setError(error.message || "Unexpected Error");
+      console.log(movies, "in catch");
     } finally {
       setLoading(false);
+      console.log(movies, "in Finally!");
     }
   };
 
